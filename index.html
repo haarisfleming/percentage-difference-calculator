@@ -58,7 +58,7 @@
                 return;
             }
 
-            var percentageDifference = ((numberNow - numberBefore) / Math.abs(numberBefore)) * 100;
+            var percentageDifference = Math.round(((numberNow - numberBefore) / Math.abs(numberBefore)) * 10000) / 100;
 
             document.getElementById("result").innerHTML = "The percentage difference is: " + percentageDifference + "%";
         }
